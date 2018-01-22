@@ -38,7 +38,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<router-outlet></router-outlet>"
+module.exports = "<app-home></app-home>"
 
 /***/ }),
 
@@ -83,12 +83,18 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home_component__ = __webpack_require__("../../../../../src/app/home/home.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_routing__ = __webpack_require__("../../../../../src/app/app.routing.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__mascaras_mascaras_component__ = __webpack_require__("../../../../../src/app/mascaras/mascaras.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__modais_modais_component__ = __webpack_require__("../../../../../src/app/modais/modais.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__conteudo_conteudo_component__ = __webpack_require__("../../../../../src/app/conteudo/conteudo.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
 
 
 
@@ -101,7 +107,10 @@ var AppModule = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["I" /* NgModule */])({
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */],
-                __WEBPACK_IMPORTED_MODULE_3__home_home_component__["a" /* HomeComponent */]
+                __WEBPACK_IMPORTED_MODULE_3__home_home_component__["a" /* HomeComponent */],
+                __WEBPACK_IMPORTED_MODULE_5__mascaras_mascaras_component__["a" /* MascarasComponent */],
+                __WEBPACK_IMPORTED_MODULE_6__modais_modais_component__["a" /* ModaisComponent */],
+                __WEBPACK_IMPORTED_MODULE_7__conteudo_conteudo_component__["a" /* ConteudoComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -126,6 +135,9 @@ var AppModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home_component__ = __webpack_require__("../../../../../src/app/home/home.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mascaras_mascaras_component__ = __webpack_require__("../../../../../src/app/mascaras/mascaras.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__modais_modais_component__ = __webpack_require__("../../../../../src/app/modais/modais.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__conteudo_conteudo_component__ = __webpack_require__("../../../../../src/app/conteudo/conteudo.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -135,10 +147,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
+
 var routes = [
-    { path: '', component: __WEBPACK_IMPORTED_MODULE_2__home_home_component__["a" /* HomeComponent */], pathMatch: 'full' },
-    { path: '**', redirectTo: '/home' },
+    { path: '', component: __WEBPACK_IMPORTED_MODULE_5__conteudo_conteudo_component__["a" /* ConteudoComponent */], pathMatch: 'full' },
     { path: 'home', component: __WEBPACK_IMPORTED_MODULE_2__home_home_component__["a" /* HomeComponent */] },
+    { path: 'mascaras', component: __WEBPACK_IMPORTED_MODULE_3__mascaras_mascaras_component__["a" /* MascarasComponent */] },
+    { path: 'modais', component: __WEBPACK_IMPORTED_MODULE_4__modais_modais_component__["a" /* ModaisComponent */] },
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -156,6 +172,67 @@ var AppRoutingModule = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "../../../../../src/app/conteudo/conteudo.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".content {\r\n    padding-top: 50px;\r\n}\r\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/conteudo/conteudo.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"content\">\n    <h3 class=\"content-subhead\">Objetivo</h3>\n    <p>\n        To use this layout, you can just copy paste the HTML, along with the CSS in\n        <a href=\"/css/layouts/side-menu.css\"\n            alt=\"Side Menu CSS\">side-menu.css</a>, and the JavaScript in\n        <a href=\"/js/ui.js\">ui.js</a>. The JS file uses vanilla JavaScript to simply toggle an\n        <code>active</code> class that makes the menu responsive.\n    </p>\n\n    <h2 class=\"content-subhead\">Now Let's Speak Some Latin</h2>\n    <p>\n        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur\n        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n    </p>\n\n    <!-- <div class=\"pure-g\">\n      <div class=\"pure-u-1-4\">\n          <img class=\"pure-img-responsive\" src=\"http://farm3.staticflickr.com/2875/9069037713_1752f5daeb.jpg\" alt=\"Peyto Lake\">\n      </div>\n      <div class=\"pure-u-1-4\">\n          <img class=\"pure-img-responsive\" src=\"http://farm3.staticflickr.com/2813/9069585985_80da8db54f.jpg\" alt=\"Train\">\n      </div>\n      <div class=\"pure-u-1-4\">\n          <img class=\"pure-img-responsive\" src=\"http://farm6.staticflickr.com/5456/9121446012_c1640e42d0.jpg\" alt=\"T-Shirt Store\">\n      </div>\n      <div class=\"pure-u-1-4\">\n          <img class=\"pure-img-responsive\" src=\"http://farm8.staticflickr.com/7357/9086701425_fda3024927.jpg\" alt=\"Mountain\">\n      </div>\n  </div> -->\n\n    <h2 class=\"content-subhead\">Try Resizing your Browser</h2>\n    <p>\n        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur\n        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n    </p>\n</div>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/conteudo/conteudo.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ConteudoComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ConteudoComponent = /** @class */ (function () {
+    function ConteudoComponent() {
+    }
+    ConteudoComponent.prototype.ngOnInit = function () {
+    };
+    ConteudoComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-conteudo',
+            template: __webpack_require__("../../../../../src/app/conteudo/conteudo.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/conteudo/conteudo.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ConteudoComponent);
+    return ConteudoComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "../../../../../src/app/home/home.component.css":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -164,7 +241,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "header {\r\n    width: 100%;\r\n    height: 250px;\r\n    position: absolute;\r\n    z-index: -99999;\r\n    background: linear-gradient(145deg,#0d47a1,#42a5f5);\r\n}\r\n\r\n#main \r\nh1, \r\nh2 {\r\n    color: #fff;\r\n}\r\n\r\n#main {\r\n    padding-top: 30px;\r\n}\r\n\r\n.header {\r\n    border: 0;\r\n}\r\n\r\n.content {\r\n    padding-top: 50px;\r\n}\r\n\r\n.logo-angular {\r\n    width: 15%;\r\n    position: absolute;\r\n    top:20px;\r\n    right: 10px;\r\n}", ""]);
+exports.push([module.i, "header {\r\n    width: 100%;\r\n    height: 250px;\r\n    position: absolute;\r\n    z-index: -99999;\r\n    background: linear-gradient(145deg,#0d47a1,#42a5f5);\r\n}\r\n\r\n#main \r\nh1, \r\nh2 {\r\n    color: #fff;\r\n}\r\n\r\n#main {\r\n    padding-top: 30px;\r\n}\r\n\r\n.header {\r\n    border: 0;\r\n}\r\n\r\n.logo-angular {\r\n    width: 15%;\r\n    position: absolute;\r\n    top:20px;\r\n    right: 10px;\r\n}", ""]);
 
 // exports
 
@@ -177,7 +254,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"layout\">\r\n  <!-- Menu toggle -->\r\n  <a href=\"#menu\" id=\"menuLink\" class=\"menu-link\">\r\n      <!-- Hamburger icon -->\r\n      <span></span>\r\n  </a>\r\n\r\n  <header></header>\r\n\r\n  <div id=\"menu\">\r\n      <div class=\"pure-menu\">\r\n          <a class=\"pure-menu-heading\" href=\"#\">Company</a>\r\n\r\n          <ul class=\"pure-menu-list\">\r\n              <li class=\"pure-menu-item\"><a href=\"#\" class=\"pure-menu-link\">Home</a></li>\r\n              <li class=\"pure-menu-item\"><a href=\"#\" class=\"pure-menu-link\">About</a></li>\r\n\r\n              <li class=\"pure-menu-item menu-item-divided pure-menu-selected\">\r\n                  <a href=\"#\" class=\"pure-menu-link\">Services</a>\r\n              </li>\r\n\r\n              <li class=\"pure-menu-item\"><a href=\"#\" class=\"pure-menu-link\">Contact</a></li>\r\n          </ul>\r\n      </div>\r\n  </div>\r\n\r\n  <div id=\"main\">\r\n      <div class=\"header\">\r\n          <h1>Angular <strong>D-R-Y</strong></h1>\r\n          <h2>Crie um component uma única vez</h2>\r\n          <img class=\"logo-angular\" src=\"../../assets/images/angular_whiteTransparent.png\" alt=\"\">\r\n      </div>\r\n\r\n      <div class=\"content\">\r\n          <h3 class=\"content-subhead\">Objetivo</h3>\r\n          <p>\r\n              To use this layout, you can just copy paste the HTML, along with the CSS in <a href=\"/css/layouts/side-menu.css\" alt=\"Side Menu CSS\">side-menu.css</a>, and the JavaScript in <a href=\"/js/ui.js\">ui.js</a>. The JS file uses vanilla JavaScript to simply toggle an <code>active</code> class that makes the menu responsive.\r\n          </p>\r\n\r\n          <h2 class=\"content-subhead\">Now Let's Speak Some Latin</h2>\r\n          <p>\r\n              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\r\n          </p>\r\n\r\n          <!-- <div class=\"pure-g\">\r\n              <div class=\"pure-u-1-4\">\r\n                  <img class=\"pure-img-responsive\" src=\"http://farm3.staticflickr.com/2875/9069037713_1752f5daeb.jpg\" alt=\"Peyto Lake\">\r\n              </div>\r\n              <div class=\"pure-u-1-4\">\r\n                  <img class=\"pure-img-responsive\" src=\"http://farm3.staticflickr.com/2813/9069585985_80da8db54f.jpg\" alt=\"Train\">\r\n              </div>\r\n              <div class=\"pure-u-1-4\">\r\n                  <img class=\"pure-img-responsive\" src=\"http://farm6.staticflickr.com/5456/9121446012_c1640e42d0.jpg\" alt=\"T-Shirt Store\">\r\n              </div>\r\n              <div class=\"pure-u-1-4\">\r\n                  <img class=\"pure-img-responsive\" src=\"http://farm8.staticflickr.com/7357/9086701425_fda3024927.jpg\" alt=\"Mountain\">\r\n              </div>\r\n          </div> -->\r\n\r\n          <h2 class=\"content-subhead\">Try Resizing your Browser</h2>\r\n          <p>\r\n              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\r\n          </p>\r\n      </div>\r\n  </div>\r\n</div>"
+module.exports = "<div id=\"layout\">\r\n    <!-- Menu toggle -->\r\n    <a href=\"#menu\" id=\"menuLink\" class=\"menu-link\">\r\n        <!-- Hamburger icon -->\r\n        <span></span>\r\n    </a>\r\n\r\n    <header></header>\r\n\r\n    <div id=\"menu\">\r\n        <div class=\"pure-menu\"></div>\r\n        <div class=\"pure-menu\">\r\n            <a class=\"pure-menu-heading\" href=\"#\">Company</a>\r\n\r\n            <ul class=\"pure-menu-list\">\r\n                <li *ngFor=\"let menu of menus\" class=\"pure-menu-item\">\r\n                    <a routerLink=\"{{menu.fullRoute}}\" class=\"pure-menu-link\">{{ menu.path }}</a>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n\r\n    <div id=\"main\">\r\n        <div class=\"header\">\r\n            <h1>Angular\r\n                <strong>D-R-Y</strong>\r\n            </h1>\r\n            <h2>Crie um component uma única vez</h2>\r\n            <img class=\"logo-angular\" src=\"../../assets/images/angular_whiteTransparent.png\" alt=\"\">\r\n        </div>\r\n        \r\n        <router-outlet></router-outlet>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -199,6 +276,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var HomeComponent = /** @class */ (function () {
     function HomeComponent() {
+        //menus = ['Windstorm', 'Bombasto', 'Magneta', 'Tornado'];
+        this.menus = [
+            {
+                path: 'home',
+                fullRoute: '/home',
+                description: 'Início',
+            },
+            {
+                path: 'Mascaras',
+                fullRoute: '/mascaras',
+                description: 'Mascaras'
+            },
+            {
+                path: 'Modais',
+                fullRoute: '/modais',
+                description: 'Modais'
+            }
+        ];
     }
     HomeComponent.prototype.ngOnInit = function () {
     };
@@ -211,6 +306,128 @@ var HomeComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], HomeComponent);
     return HomeComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/mascaras/mascaras.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "#main {\r\n    position: relative;\r\n    top: 100px;\r\n    left: 50px; \r\n}", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/mascaras/mascaras.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div id=\"main\">\n  <h2>Mascaras</h2>\n</div>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/mascaras/mascaras.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MascarasComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var MascarasComponent = /** @class */ (function () {
+    function MascarasComponent() {
+    }
+    MascarasComponent.prototype.ngOnInit = function () {
+    };
+    MascarasComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-mascaras',
+            template: __webpack_require__("../../../../../src/app/mascaras/mascaras.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/mascaras/mascaras.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], MascarasComponent);
+    return MascarasComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/modais/modais.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/modais/modais.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  modais works!\n</p>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/modais/modais.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModaisComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ModaisComponent = /** @class */ (function () {
+    function ModaisComponent() {
+    }
+    ModaisComponent.prototype.ngOnInit = function () {
+    };
+    ModaisComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-modais',
+            template: __webpack_require__("../../../../../src/app/modais/modais.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/modais/modais.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ModaisComponent);
+    return ModaisComponent;
 }());
 
 
