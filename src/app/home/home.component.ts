@@ -7,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   //menus = ['Windstorm', 'Bombasto', 'Magneta', 'Tornado'];
 
-  menus = [  
+  menus = [
     {
       path: 'home',
-      fullRoute: '/home',
+      fullRoute: '/',
       description: 'Início',
     },
     {
