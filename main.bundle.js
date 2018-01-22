@@ -164,7 +164,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "header {\r\n    width: 100%;\r\n    height: 200px;\r\n    position: absolute;\r\n    z-index: -99999;\r\n    background: linear-gradient(145deg,#0d47a1,#42a5f5);\r\n}\r\n\r\n#main \r\nh1, \r\nh2 {\r\n    color: #fff;\r\n}\r\n\r\n#main {\r\n    padding-top: 10px;\r\n}\r\n\r\n.header {\r\n    border: 0;\r\n}\r\n\r\n.content {\r\n    padding-top: 50px;\r\n}\r\n\r\n.logo-angular {\r\n    width: 15%;\r\n    position: absolute;\r\n    top:25px;\r\n    right: 10px;\r\n}", ""]);
+exports.push([module.i, "header {\r\n    width: 100%;\r\n    height: 250px;\r\n    position: absolute;\r\n    z-index: -99999;\r\n    background: linear-gradient(145deg,#0d47a1,#42a5f5);\r\n}\r\n\r\n#main \r\nh1, \r\nh2 {\r\n    color: #fff;\r\n}\r\n\r\n#main {\r\n    padding-top: 30px;\r\n}\r\n\r\n.header {\r\n    border: 0;\r\n}\r\n\r\n.content {\r\n    padding-top: 50px;\r\n}\r\n\r\n.logo-angular {\r\n    width: 15%;\r\n    position: absolute;\r\n    top:20px;\r\n    right: 10px;\r\n}", ""]);
 
 // exports
 
