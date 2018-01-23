@@ -193,7 +193,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/conteudo/conteudo.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"content\">\n    <h3 class=\"content-subhead\">Objetivo</h3>\n    <p>\n        To use this layout, you can just copy paste the HTML, along with the CSS in\n        <a href=\"/css/layouts/side-menu.css\"\n            alt=\"Side Menu CSS\">side-menu.css</a>, and the JavaScript in\n        <a href=\"/js/ui.js\">ui.js</a>. The JS file uses vanilla JavaScript to simply toggle an\n        <code>active</code> class that makes the menu responsive.\n    </p>\n\n    <h2 class=\"content-subhead\">Now Let's Speak Some Latin</h2>\n    <p>\n        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur\n        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n    </p>\n\n    <!-- <div class=\"pure-g\">\n      <div class=\"pure-u-1-4\">\n          <img class=\"pure-img-responsive\" src=\"http://farm3.staticflickr.com/2875/9069037713_1752f5daeb.jpg\" alt=\"Peyto Lake\">\n      </div>\n      <div class=\"pure-u-1-4\">\n          <img class=\"pure-img-responsive\" src=\"http://farm3.staticflickr.com/2813/9069585985_80da8db54f.jpg\" alt=\"Train\">\n      </div>\n      <div class=\"pure-u-1-4\">\n          <img class=\"pure-img-responsive\" src=\"http://farm6.staticflickr.com/5456/9121446012_c1640e42d0.jpg\" alt=\"T-Shirt Store\">\n      </div>\n      <div class=\"pure-u-1-4\">\n          <img class=\"pure-img-responsive\" src=\"http://farm8.staticflickr.com/7357/9086701425_fda3024927.jpg\" alt=\"Mountain\">\n      </div>\n  </div> -->\n\n    <h2 class=\"content-subhead\">Try Resizing your Browser</h2>\n    <p>\n        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur\n        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n    </p>\n</div>"
+module.exports = "<div class=\"content\">\n    <h2 class=\"content-subhead\">Objetivo</h2>\n    <p>A idéia é criar um component o máximo customizáveis, compartilhá-lo e nunca mais reinventar a roda.</p>\n\n    <h2 class=\"content-subhead\">Como nasceu</h2>\n    <p>\n       Se você parar para pensar, nosso trabalho é arduo, muitas coisas para aprender todos os dias e nem sempre temos tempo para implementar o que usamos. \n       permemos a conta de quantas coisas criamos sem utilidade alguma para nosso trabalho e afazeres.\n    </p>\n\n    <h2 class=\"content-subhead\">Solução</h2>\n    <p>\n        Estamos constantememte criando filtros dos components mais usados em produção, vamos criando e compartilhando por aqui, e o melhor tudo open source.\n        \n    </p>\n</div>"
 
 /***/ }),
 
@@ -241,7 +241,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "header {\r\n    width: 100%;\r\n    height: 250px;\r\n    position: absolute;\r\n    z-index: -99999;\r\n    background: linear-gradient(145deg,#0d47a1,#42a5f5);\r\n}\r\n\r\n#main \r\nh1, \r\nh2 {\r\n    color: #fff;\r\n}\r\n\r\n#main {\r\n    padding-top: 30px;\r\n}\r\n\r\n.header {\r\n    border: 0;\r\n}\r\n\r\n.logo-angular {\r\n    width: 15%;\r\n    position: absolute;\r\n    top:20px;\r\n    right: 10px;\r\n}", ""]);
+exports.push([module.i, "header {\r\n    width: 100%;\r\n    height: 250px;\r\n    position: absolute;\r\n    z-index: -99999;\r\n    background: linear-gradient(145deg,#0d47a1,#42a5f5);\r\n}\r\n\r\n#main \r\nh1, \r\nh2 {\r\n    color: #fff;\r\n}\r\n\r\n#main {\r\n    padding-top: 30px;\r\n}\r\n\r\n.header {\r\n    border: 0;\r\n}\r\n\r\n.logo-angular {\r\n    width: 15%;\r\n    position: absolute;\r\n    top:20px;\r\n    right: 70px;\r\n}", ""]);
 
 // exports
 
@@ -280,7 +280,7 @@ var HomeComponent = /** @class */ (function () {
         this.menus = [
             {
                 path: 'home',
-                fullRoute: '/home',
+                fullRoute: '/',
                 description: 'Início',
             },
             {
@@ -291,6 +291,16 @@ var HomeComponent = /** @class */ (function () {
             {
                 path: 'Modais',
                 fullRoute: '/modais',
+                description: 'Modais'
+            },
+            {
+                path: 'Gráficos',
+                fullRoute: '/graficos',
+                description: 'Modais'
+            },
+            {
+                path: 'Internacionalização',
+                fullRoute: '/graficos',
                 description: 'Modais'
             }
         ];
@@ -381,7 +391,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "#main {\r\n    position: relative;\r\n    top: 100px;\r\n    left: 50px; \r\n}", ""]);
 
 // exports
 
@@ -394,7 +404,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/modais/modais.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  modais works!\n</p>\n"
+module.exports = "<div id=\"main\">\n  <h2>Modais</h2>\n</div>"
 
 /***/ }),
 
