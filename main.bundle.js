@@ -57,10 +57,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
-        this.title = 'app';
     }
     AppComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
             selector: 'app-root',
             template: __webpack_require__("../../../../../src/app/app.component.html"),
             styles: [__webpack_require__("../../../../../src/app/app.component.css")]
@@ -86,6 +85,10 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__mascaras_mascaras_component__ = __webpack_require__("../../../../../src/app/mascaras/mascaras.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__modais_modais_component__ = __webpack_require__("../../../../../src/app/modais/modais.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__conteudo_conteudo_component__ = __webpack_require__("../../../../../src/app/conteudo/conteudo.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__graficos_graficos_component__ = __webpack_require__("../../../../../src/app/graficos/graficos.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__internacionalizacao_internacionalizacao_component__ = __webpack_require__("../../../../../src/app/internacionalizacao/internacionalizacao.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__manipulacao_dom_manipulacao_dom_component__ = __webpack_require__("../../../../../src/app/manipulacao-dom/manipulacao-dom.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__json_api_json_api_component__ = __webpack_require__("../../../../../src/app/json-api/json-api.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -100,24 +103,33 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
+
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["I" /* NgModule */])({
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["J" /* NgModule */])({
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */],
                 __WEBPACK_IMPORTED_MODULE_3__home_home_component__["a" /* HomeComponent */],
                 __WEBPACK_IMPORTED_MODULE_5__mascaras_mascaras_component__["a" /* MascarasComponent */],
                 __WEBPACK_IMPORTED_MODULE_6__modais_modais_component__["a" /* ModaisComponent */],
-                __WEBPACK_IMPORTED_MODULE_7__conteudo_conteudo_component__["a" /* ConteudoComponent */]
+                __WEBPACK_IMPORTED_MODULE_7__conteudo_conteudo_component__["a" /* ConteudoComponent */],
+                __WEBPACK_IMPORTED_MODULE_8__graficos_graficos_component__["a" /* GraficosComponent */],
+                __WEBPACK_IMPORTED_MODULE_9__internacionalizacao_internacionalizacao_component__["a" /* InternacionalizacaoComponent */],
+                __WEBPACK_IMPORTED_MODULE_10__manipulacao_dom_manipulacao_dom_component__["a" /* ManipulacaoDomComponent */],
+                __WEBPACK_IMPORTED_MODULE_11__json_api_json_api_component__["a" /* JsonApiComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_4__app_routing__["a" /* AppRoutingModule */]
             ],
             providers: [],
-            bootstrap: [__WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */]]
+            bootstrap: [__WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */]],
+            schemas: [__WEBPACK_IMPORTED_MODULE_1__angular_core__["j" /* CUSTOM_ELEMENTS_SCHEMA */]]
         })
     ], AppModule);
     return AppModule;
@@ -138,6 +150,10 @@ var AppModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mascaras_mascaras_component__ = __webpack_require__("../../../../../src/app/mascaras/mascaras.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__modais_modais_component__ = __webpack_require__("../../../../../src/app/modais/modais.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__conteudo_conteudo_component__ = __webpack_require__("../../../../../src/app/conteudo/conteudo.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__graficos_graficos_component__ = __webpack_require__("../../../../../src/app/graficos/graficos.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__internacionalizacao_internacionalizacao_component__ = __webpack_require__("../../../../../src/app/internacionalizacao/internacionalizacao.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__manipulacao_dom_manipulacao_dom_component__ = __webpack_require__("../../../../../src/app/manipulacao-dom/manipulacao-dom.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__json_api_json_api_component__ = __webpack_require__("../../../../../src/app/json-api/json-api.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -150,17 +166,25 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
+
+
 var routes = [
     { path: '', component: __WEBPACK_IMPORTED_MODULE_5__conteudo_conteudo_component__["a" /* ConteudoComponent */], pathMatch: 'full' },
     { path: 'home', component: __WEBPACK_IMPORTED_MODULE_2__home_home_component__["a" /* HomeComponent */] },
     { path: 'mascaras', component: __WEBPACK_IMPORTED_MODULE_3__mascaras_mascaras_component__["a" /* MascarasComponent */] },
     { path: 'modais', component: __WEBPACK_IMPORTED_MODULE_4__modais_modais_component__["a" /* ModaisComponent */] },
+    { path: 'graficos', component: __WEBPACK_IMPORTED_MODULE_6__graficos_graficos_component__["a" /* GraficosComponent */] },
+    { path: 'internacionalizacao', component: __WEBPACK_IMPORTED_MODULE_7__internacionalizacao_internacionalizacao_component__["a" /* InternacionalizacaoComponent */] },
+    { path: 'manipulacao-dom', component: __WEBPACK_IMPORTED_MODULE_8__manipulacao_dom_manipulacao_dom_component__["a" /* ManipulacaoDomComponent */] },
+    { path: 'json-api', component: __WEBPACK_IMPORTED_MODULE_9__json_api_json_api_component__["a" /* JsonApiComponent */] },
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
     }
     AppRoutingModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
             imports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* RouterModule */].forRoot(routes)],
             exports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* RouterModule */]]
         })
@@ -180,7 +204,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".content {\r\n    padding-top: 50px;\r\n}\r\n", ""]);
+exports.push([module.i, ".content {\r\n    padding-top: 50px;\r\n}", ""]);
 
 // exports
 
@@ -193,7 +217,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/conteudo/conteudo.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"content\">\n    <h2 class=\"content-subhead\">Objetivo</h2>\n    <p>A idéia é criar um component o máximo customizáveis, compartilhá-lo e nunca mais reinventar a roda.</p>\n\n    <h2 class=\"content-subhead\">Como nasceu</h2>\n    <p>\n       Se você parar para pensar, nosso trabalho é arduo, muitas coisas para aprender todos os dias e nem sempre temos tempo para implementar o que usamos. \n       permemos a conta de quantas coisas criamos sem utilidade alguma para nosso trabalho e afazeres.\n    </p>\n\n    <h2 class=\"content-subhead\">Solução</h2>\n    <p>\n        Estamos constantememte criando filtros dos components mais usados em produção, vamos criando e compartilhando por aqui, e o melhor tudo open source.\n        \n    </p>\n</div>"
+module.exports = "<div class=\"content\">\r\n    <h2 class=\"content-subhead\">Objetivo</h2>\r\n    <p>A idéia é criar um component o máximo customizáveis, compartilhá-lo e nunca mais reinventar a roda.</p>\r\n\r\n    <h2 class=\"content-subhead\">Como nasceu</h2>\r\n    <p>\r\n       Se você parar para pensar, nosso trabalho é arduo, muitas coisas para aprender todos os dias e nem sempre temos tempo para implementar o que usamos. \r\n       permemos a conta de quantas coisas criamos sem utilidade alguma para nosso trabalho e afazeres.\r\n    </p>\r\n\r\n    <h2 class=\"content-subhead\">Solução</h2>\r\n    <p>\r\n        Estamos constantememte criando filtros dos components mais usados em produção, vamos criando e compartilhando por aqui, e o melhor tudo open source.     \r\n    </p>\r\n</div>"
 
 /***/ }),
 
@@ -219,7 +243,7 @@ var ConteudoComponent = /** @class */ (function () {
     ConteudoComponent.prototype.ngOnInit = function () {
     };
     ConteudoComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
             selector: 'app-conteudo',
             template: __webpack_require__("../../../../../src/app/conteudo/conteudo.component.html"),
             styles: [__webpack_require__("../../../../../src/app/conteudo/conteudo.component.css")]
@@ -227,6 +251,67 @@ var ConteudoComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], ConteudoComponent);
     return ConteudoComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/graficos/graficos.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".content {\r\n    position: relative;\r\n    top: 100px;\r\n}", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/graficos/graficos.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"content\">\r\n  <h2>Gráficos</h2>\r\n</div>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/graficos/graficos.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GraficosComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var GraficosComponent = /** @class */ (function () {
+    function GraficosComponent() {
+    }
+    GraficosComponent.prototype.ngOnInit = function () {
+    };
+    GraficosComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+            selector: 'app-graficos',
+            template: __webpack_require__("../../../../../src/app/graficos/graficos.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/graficos/graficos.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], GraficosComponent);
+    return GraficosComponent;
 }());
 
 
@@ -241,7 +326,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "header {\r\n    width: 100%;\r\n    height: 250px;\r\n    position: absolute;\r\n    z-index: -99999;\r\n    background: linear-gradient(145deg,#0d47a1,#42a5f5);\r\n}\r\n\r\n#main \r\nh1, \r\nh2 {\r\n    color: #fff;\r\n}\r\n\r\n#main {\r\n    padding-top: 30px;\r\n}\r\n\r\n.header {\r\n    border: 0;\r\n}\r\n\r\n.logo-angular {\r\n    width: 15%;\r\n    position: absolute;\r\n    top:20px;\r\n    right: 70px;\r\n}", ""]);
+exports.push([module.i, "header {\r\n    width: 100%;\r\n    height: 250px;\r\n    position: absolute;\r\n    z-index: -99999;\r\n    background: linear-gradient(145deg,#0d47a1,#42a5f5);\r\n}\r\n\r\n#menu {\r\n  width: 15%;\r\n}\r\n\r\n#main\r\nh1,\r\nh2 {\r\n    color: #fff;\r\n}\r\n\r\n#main {\r\n    padding-top: 30px;\r\n}\r\n\r\n.header {\r\n    border: 0;\r\n}\r\n\r\n.logo-angular {\r\n    width: 15%;\r\n    position: absolute;\r\n    top:20px;\r\n    right: 70px;\r\n}\r\n", ""]);
 
 // exports
 
@@ -300,15 +385,25 @@ var HomeComponent = /** @class */ (function () {
             },
             {
                 path: 'Internacionalização',
-                fullRoute: '/graficos',
-                description: 'Modais'
+                fullRoute: '/internacionalizacao',
+                description: 'Internacionalização'
+            },
+            {
+                path: 'Manipulação DOM',
+                fullRoute: '/manipulacao-dom',
+                description: 'Manipulação DOM'
+            },
+            {
+                path: 'Json API',
+                fullRoute: '/json-api',
+                description: 'Json API'
             }
         ];
     }
     HomeComponent.prototype.ngOnInit = function () {
     };
     HomeComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
             selector: 'app-home',
             template: __webpack_require__("../../../../../src/app/home/home.component.html"),
             styles: [__webpack_require__("../../../../../src/app/home/home.component.css")]
@@ -316,6 +411,190 @@ var HomeComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], HomeComponent);
     return HomeComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/internacionalizacao/internacionalizacao.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".content {\r\n    position: relative;\r\n    top: 100px;\r\n}", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/internacionalizacao/internacionalizacao.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"content\">\r\n  <h2>Internacionalização</h2>\r\n</div>\r\n\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/internacionalizacao/internacionalizacao.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InternacionalizacaoComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var InternacionalizacaoComponent = /** @class */ (function () {
+    function InternacionalizacaoComponent() {
+    }
+    InternacionalizacaoComponent.prototype.ngOnInit = function () {
+    };
+    InternacionalizacaoComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+            selector: 'app-internacionalizacao',
+            template: __webpack_require__("../../../../../src/app/internacionalizacao/internacionalizacao.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/internacionalizacao/internacionalizacao.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], InternacionalizacaoComponent);
+    return InternacionalizacaoComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/json-api/json-api.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".content {\r\n    position: relative;\r\n    top: 100px;\r\n  }", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/json-api/json-api.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"content\">\r\n    <h2>Json API</h2>\r\n</div>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/json-api/json-api.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return JsonApiComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var JsonApiComponent = /** @class */ (function () {
+    function JsonApiComponent() {
+    }
+    JsonApiComponent.prototype.ngOnInit = function () {
+    };
+    JsonApiComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+            selector: 'app-json-api',
+            template: __webpack_require__("../../../../../src/app/json-api/json-api.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/json-api/json-api.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], JsonApiComponent);
+    return JsonApiComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/manipulacao-dom/manipulacao-dom.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".content {\r\n    position: relative;\r\n    top: 100px;\r\n  }\r\n  ", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/manipulacao-dom/manipulacao-dom.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"content\">\r\n  <h2>Manipulação do DOM</h2>\r\n</div>\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/manipulacao-dom/manipulacao-dom.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ManipulacaoDomComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ManipulacaoDomComponent = /** @class */ (function () {
+    function ManipulacaoDomComponent() {
+        this.panelOpenState = false;
+    }
+    ManipulacaoDomComponent.prototype.ngOnInit = function () {
+    };
+    ManipulacaoDomComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+            selector: 'app-manipulacao-dom',
+            template: __webpack_require__("../../../../../src/app/manipulacao-dom/manipulacao-dom.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/manipulacao-dom/manipulacao-dom.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ManipulacaoDomComponent);
+    return ManipulacaoDomComponent;
 }());
 
 
@@ -330,7 +609,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "#main {\r\n    position: relative;\r\n    top: 100px;\r\n    left: 50px; \r\n}", ""]);
+exports.push([module.i, ".content {\r\n    position: relative;\r\n    top: 100px;\r\n}\r\n", ""]);
 
 // exports
 
@@ -343,7 +622,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/mascaras/mascaras.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"main\">\n  <h2>Mascaras</h2>\n</div>"
+module.exports = "<div class=\"content\">\r\n    <h2>Mascaras</h2>\r\n</div>"
 
 /***/ }),
 
@@ -369,7 +648,7 @@ var MascarasComponent = /** @class */ (function () {
     MascarasComponent.prototype.ngOnInit = function () {
     };
     MascarasComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
             selector: 'app-mascaras',
             template: __webpack_require__("../../../../../src/app/mascaras/mascaras.component.html"),
             styles: [__webpack_require__("../../../../../src/app/mascaras/mascaras.component.css")]
@@ -391,7 +670,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "#main {\r\n    position: relative;\r\n    top: 100px;\r\n    left: 50px; \r\n}", ""]);
+exports.push([module.i, ".content {\r\n  position: relative;\r\n  top: 100px;\r\n}", ""]);
 
 // exports
 
@@ -404,7 +683,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/modais/modais.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"main\">\n  <h2>Modais</h2>\n</div>"
+module.exports = "<div class=\"content\">\r\n    <h2>Modais</h2>\r\n</div>"
 
 /***/ }),
 
@@ -430,7 +709,7 @@ var ModaisComponent = /** @class */ (function () {
     ModaisComponent.prototype.ngOnInit = function () {
     };
     ModaisComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
             selector: 'app-modais',
             template: __webpack_require__("../../../../../src/app/modais/modais.component.html"),
             styles: [__webpack_require__("../../../../../src/app/modais/modais.component.css")]
@@ -474,7 +753,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].production) {
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* enableProdMode */])();
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* enableProdMode */])();
 }
 Object(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_app_module__["a" /* AppModule */])
     .catch(function (err) { return console.log(err); });
