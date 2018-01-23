@@ -10,7 +10,7 @@ export class HomeComponent implements OnInit {
   menus = [  
     {
       path: 'home',
-      fullRoute: '/home',
+      fullRoute: '/',
       description: 'Início',
     },
     {
@@ -21,6 +21,16 @@ export class HomeComponent implements OnInit {
     {
       path: 'Modais',
       fullRoute: '/modais',
+      description: 'Modais'
+    },
+    {
+      path: 'Gráficos',
+      fullRoute: '/graficos',
+      description: 'Modais'
+    },
+    {
+      path: 'Internacionalização',
+      fullRoute: '/internacionalizacao',
       description: 'Modais'
     }
   ]

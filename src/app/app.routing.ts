@@ -5,14 +5,17 @@ import { HomeComponent } from './home/home.component';
 import { MascarasComponent } from './mascaras/mascaras.component';
 import { ModaisComponent } from './modais/modais.component';
 import { ConteudoComponent } from './conteudo/conteudo.component';
+import { GraficosComponent } from './graficos/graficos.component';
+import { InternacionalizacaoComponent } from './internacionalizacao/internacionalizacao.component';
 
 const routes: Routes = [
     {path: '', component: ConteudoComponent, pathMatch: 'full' },
     {path: 'home', component: HomeComponent},
     {path: 'mascaras', component: MascarasComponent},
     {path: 'modais', component: ModaisComponent},
+    {path: 'graficos', component: GraficosComponent},
+    {path: 'internacionalizacao', component: InternacionalizacaoComponent},
  ];
-
 
 @NgModule({
   imports: [ RouterModule.forRoot(routes) ],

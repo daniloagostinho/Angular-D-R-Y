@@ -8,6 +8,8 @@ import { AppRoutingModule } from './app.routing';
 import { MascarasComponent } from './mascaras/mascaras.component';
 import { ModaisComponent } from './modais/modais.component';
 import { ConteudoComponent } from './conteudo/conteudo.component';
+import { GraficosComponent } from './graficos/graficos.component';
+import { InternacionalizacaoComponent } from './internacionalizacao/internacionalizacao.component';
 
 
 @NgModule({
@@ -16,7 +18,9 @@ import { ConteudoComponent } from './conteudo/conteudo.component';
     HomeComponent,
     MascarasComponent,
     ModaisComponent,
-    ConteudoComponent
+    ConteudoComponent,
+    GraficosComponent,
+    InternacionalizacaoComponent
   ],
   imports: [
     BrowserModule,
