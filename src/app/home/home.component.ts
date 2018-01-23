@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   //menus = ['Windstorm', 'Bombasto', 'Magneta', 'Tornado'];
 
-  menus = [  
+  menus = [
     {
       path: 'home',
       fullRoute: '/',
@@ -31,6 +31,11 @@ export class HomeComponent implements OnInit {
     {
       path: 'Internacionalização',
       fullRoute: '/internacionalizacao',
+      description: 'Modais'
+    },
+    {
+      path: 'Manipulação DOM',
+      fullRoute: '/manipulacao-dom',
       description: 'Modais'
     }
   ]

@@ -10,6 +10,7 @@ import { ModaisComponent } from './modais/modais.component';
 import { ConteudoComponent } from './conteudo/conteudo.component';
 import { GraficosComponent } from './graficos/graficos.component';
 import { InternacionalizacaoComponent } from './internacionalizacao/internacionalizacao.component';
+import { ManipulacaoDomComponent } from './manipulacao-dom/manipulacao-dom.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { InternacionalizacaoComponent } from './internacionalizacao/internaciona
     ModaisComponent,
     ConteudoComponent,
     GraficosComponent,
-    InternacionalizacaoComponent
+    InternacionalizacaoComponent,
+    ManipulacaoDomComponent
   ],
   imports: [
     BrowserModule,
