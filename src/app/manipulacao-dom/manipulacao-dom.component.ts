@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./manipulacao-dom.component.css']
 })
 export class ManipulacaoDomComponent implements OnInit {
-
-  constructor() { }
+  panelOpenState: boolean = false;
+  constructor() { } 
 
   ngOnInit() {
   }

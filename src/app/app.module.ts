@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -11,7 +10,7 @@ import { ConteudoComponent } from './conteudo/conteudo.component';
 import { GraficosComponent } from './graficos/graficos.component';
 import { InternacionalizacaoComponent } from './internacionalizacao/internacionalizacao.component';
 import { ManipulacaoDomComponent } from './manipulacao-dom/manipulacao-dom.component';
-
+import { JsonApiComponent } from './json-api/json-api.component';
 
 @NgModule({
   declarations: [
@@ -22,13 +21,15 @@ import { ManipulacaoDomComponent } from './manipulacao-dom/manipulacao-dom.compo
     ConteudoComponent,
     GraficosComponent,
     InternacionalizacaoComponent,
-    ManipulacaoDomComponent
+    ManipulacaoDomComponent,
+    JsonApiComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule { }

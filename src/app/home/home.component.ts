@@ -31,12 +31,17 @@ export class HomeComponent implements OnInit {
     {
       path: 'Internacionalização',
       fullRoute: '/internacionalizacao',
-      description: 'Modais'
+      description: 'Internacionalização'
     },
     {
       path: 'Manipulação DOM',
       fullRoute: '/manipulacao-dom',
-      description: 'Modais'
+      description: 'Manipulação DOM'
+    },
+    {
+      path: 'Json API',
+      fullRoute: '/json-api',
+      description: 'Json API'
     }
   ]
 
