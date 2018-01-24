@@ -503,3 +503,12 @@ Hides the menu at `48em`, but modify this based on your app's needs.
         left: 150px;
     }
 }
+/*
+.mat-tab-labels {
+  background: #ddd;
+}
+
+.mat-tab-body-content.ng-trigger.ng-trigger-translateTab {
+  background: #f2f0f0;
+  border: 1px solid #ddd;
+} */

@@ -12,6 +12,10 @@ import { InternacionalizacaoComponent } from './internacionalizacao/internaciona
 import { ManipulacaoDomComponent } from './manipulacao-dom/manipulacao-dom.component';
 import { JsonApiComponent } from './json-api/json-api.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import {MatTabsModule} from '@angular/material/tabs';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +30,9 @@ import { JsonApiComponent } from './json-api/json-api.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

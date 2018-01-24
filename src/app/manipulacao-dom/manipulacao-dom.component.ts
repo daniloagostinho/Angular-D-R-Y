@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ManipulacaoDomComponent implements OnInit {
   panelOpenState: boolean = false;
-  constructor() { } 
+  constructor() { }
 
   ngOnInit() {
   }
