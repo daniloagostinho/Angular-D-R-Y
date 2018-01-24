@@ -89,6 +89,8 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__internacionalizacao_internacionalizacao_component__ = __webpack_require__("../../../../../src/app/internacionalizacao/internacionalizacao.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__manipulacao_dom_manipulacao_dom_component__ = __webpack_require__("../../../../../src/app/manipulacao-dom/manipulacao-dom.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__json_api_json_api_component__ = __webpack_require__("../../../../../src/app/json-api/json-api.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__angular_platform_browser_animations__ = __webpack_require__("../../../platform-browser/esm5/animations.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__angular_material_tabs__ = __webpack_require__("../../../material/esm5/tabs.es5.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -107,11 +109,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["J" /* NgModule */])({
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* NgModule */])({
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */],
                 __WEBPACK_IMPORTED_MODULE_3__home_home_component__["a" /* HomeComponent */],
@@ -125,7 +129,9 @@ var AppModule = /** @class */ (function () {
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-                __WEBPACK_IMPORTED_MODULE_4__app_routing__["a" /* AppRoutingModule */]
+                __WEBPACK_IMPORTED_MODULE_4__app_routing__["a" /* AppRoutingModule */],
+                __WEBPACK_IMPORTED_MODULE_12__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
+                __WEBPACK_IMPORTED_MODULE_13__angular_material_tabs__["a" /* MatTabsModule */]
             ],
             providers: [],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */]],
@@ -184,7 +190,7 @@ var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
     }
     AppRoutingModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["K" /* NgModule */])({
             imports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* RouterModule */].forRoot(routes)],
             exports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* RouterModule */]]
         })
@@ -326,7 +332,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "header {\r\n    width: 100%;\r\n    height: 250px;\r\n    position: absolute;\r\n    z-index: -99999;\r\n    background: linear-gradient(145deg,#0d47a1,#42a5f5);\r\n}\r\n\r\n#menu {\r\n  width: 15%;\r\n}\r\n\r\n#main\r\nh1,\r\nh2 {\r\n    color: #fff;\r\n}\r\n\r\n#main {\r\n    padding-top: 30px;\r\n}\r\n\r\n.header {\r\n    border: 0;\r\n}\r\n\r\n.logo-angular {\r\n    width: 15%;\r\n    position: absolute;\r\n    top:20px;\r\n    right: 70px;\r\n}\r\n", ""]);
+exports.push([module.i, "@import url('https://fonts.googleapis.com/css?family=Anton');\r\n\r\nheader {\r\n    width: 100%;\r\n    height: 300px;\r\n    position: absolute;\r\n    z-index: -99999;\r\n    background: linear-gradient(145deg,#0d47a1,#42a5f5);\r\n}\r\n\r\n#menu {\r\n  width: 15%;\r\n}\r\n\r\n#main\r\nh1,\r\nh2 {\r\n    color: #fff;\r\n\r\n}\r\n\r\n#main h1 {\r\n  font-family: 'Anton', sans-serif;\r\n  font-size: 60px;\r\n}\r\n\r\n#main {\r\n    padding-top: 30px;\r\n}\r\n\r\n.header {\r\n    border: 0;\r\n}\r\n\r\n.logo-angular {\r\n    width: 15%;\r\n    position: absolute;\r\n    top:20px;\r\n    right: 70px;\r\n}\r\n", ""]);
 
 // exports
 
@@ -339,7 +345,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"layout\">\r\n    <!-- Menu toggle -->\r\n    <a href=\"#menu\" id=\"menuLink\" class=\"menu-link\">\r\n        <!-- Hamburger icon -->\r\n        <span></span>\r\n    </a>\r\n\r\n    <header></header>\r\n\r\n    <div id=\"menu\">\r\n        <div class=\"pure-menu\"></div>\r\n        <div class=\"pure-menu\">\r\n            <a class=\"pure-menu-heading\" href=\"#\">Company</a>\r\n\r\n            <ul class=\"pure-menu-list\">\r\n                <li *ngFor=\"let menu of menus\" class=\"pure-menu-item\">\r\n                    <a routerLink=\"{{menu.fullRoute}}\" class=\"pure-menu-link\">{{ menu.path }}</a>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n\r\n    <div id=\"main\">\r\n        <div class=\"header\">\r\n            <h1>Angular\r\n                <strong>D-R-Y</strong>\r\n            </h1>\r\n            <h2>Crie um component uma única vez</h2>\r\n            <img class=\"logo-angular\" src=\"../../assets/images/angular_whiteTransparent.png\" alt=\"\">\r\n        </div>\r\n        \r\n        <router-outlet></router-outlet>\r\n    </div>\r\n</div>"
+module.exports = "<div id=\"layout\">\r\n    <!-- Menu toggle -->\r\n    <a href=\"#menu\" id=\"menuLink\" class=\"menu-link\">\r\n        <!-- Hamburger icon -->\r\n        <span></span>\r\n    </a>\r\n\r\n    <header></header>\r\n\r\n    <div id=\"menu\">\r\n        <div class=\"pure-menu\"></div>\r\n        <div class=\"pure-menu\">\r\n            <a class=\"pure-menu-heading\" href=\"#\">DRY</a>\r\n\r\n            <ul class=\"pure-menu-list\">\r\n                <li *ngFor=\"let menu of menus\" class=\"pure-menu-item\">\r\n                    <a routerLink=\"{{menu.fullRoute}}\" class=\"pure-menu-link\">{{ menu.path }}</a>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n\r\n    <div id=\"main\">\r\n        <div class=\"header\">\r\n            <h1>Angular\r\n                <strong>D-R-Y</strong>\r\n            </h1>\r\n            <h2>Crie um component uma única vez</h2>\r\n            <img class=\"logo-angular\" src=\"../../assets/images/angular_whiteTransparent.png\" alt=\"\">\r\n        </div>\r\n        \r\n        <router-outlet></router-outlet>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -547,7 +553,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".content {\r\n    position: relative;\r\n    top: 100px;\r\n  }\r\n  ", ""]);
+exports.push([module.i, ".content {\r\n    position: relative;\r\n    top: 150px;\r\n  }\r\n", ""]);
 
 // exports
 
@@ -560,7 +566,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/manipulacao-dom/manipulacao-dom.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"content\">\r\n  <h2>Manipulação do DOM</h2>\r\n</div>\r\n"
+module.exports = "<div class=\"content\">\r\n  <section>\r\n      <h3>ElementRef</h3>\r\n\r\n      <p>Permite acessar o DOM. Para usá-lo é necessario importar e declarar no constructor.<p>\r\n\r\n          <iframe width=\"100%\" height=\"300\" src=\"//jsfiddle.net/yurzui/1hk7knwq/embedded/js,html,css,result/dark/\" allowpaymentrequest allowfullscreen=\"allowfullscreen\" frameborder=\"0\"></iframe>\r\n  </section>\r\n\r\n  <section>\r\n      <h3>NativeElement</h3>\r\n      <iframe width=\"100%\" height=\"300\" src=\"//jsfiddle.net/yurzui/1hk7knwq/embedded/js,html,css,result/dark/\" allowpaymentrequest allowfullscreen=\"allowfullscreen\" frameborder=\"0\"></iframe>\r\n    </section>\r\n\r\n</div>\r\n"
 
 /***/ }),
 
@@ -753,7 +759,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].production) {
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* enableProdMode */])();
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_15" /* enableProdMode */])();
 }
 Object(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_app_module__["a" /* AppModule */])
     .catch(function (err) { return console.log(err); });
