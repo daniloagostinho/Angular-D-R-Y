@@ -503,12 +503,21 @@ Hides the menu at `48em`, but modify this based on your app's needs.
         left: 150px;
     }
 }
-/*
-.mat-tab-labels {
-  background: #ddd;
+
+mat-tab-group.demo-tab-group.mat-tab-group.mat-primary {
+    background: #f7f5f5;
+    border: 1px solid #ddd;
 }
 
-.mat-tab-body-content.ng-trigger.ng-trigger-translateTab {
-  background: #f2f0f0;
-  border: 1px solid #ddd;
-} */
+.mat-tab-label-container {
+    background: #333;
+    color: #fff;
+}
+
+.mat-tab-header-pagination.mat-tab-header-pagination-before.mat-elevation-z4.mat-ripple.mat-tab-header-pagination-disabled {
+    background: #333333;
+}
+
+.mat-tab-header-pagination.mat-tab-header-pagination-after.mat-elevation-z4.mat-ripple {
+    background: #333333;
+}
