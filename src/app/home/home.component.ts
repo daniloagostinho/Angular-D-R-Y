@@ -9,8 +9,8 @@ export class HomeComponent implements OnInit {
 
   menus = [
     {
-      path: 'home',
-      fullRoute: '/',
+      path: 'Instalação',
+      fullRoute: '/instalacao',
       description: 'Início',
     },
     {

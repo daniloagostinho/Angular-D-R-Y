@@ -1,0 +1,49 @@
+header {
+  width: 100%;
+  height: 530px;
+  position: absolute;
+  z-index: -99999;
+  background: linear-gradient(45deg, #515ba1, #6078b8);
+  transform: skewY(-2deg);
+  top: -45px;
+}
+
+#main
+h1,
+h3 {
+    color: #fff;
+
+}
+
+#main h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: 60px;
+}
+
+#main {
+    padding-top: 30px;
+}
+
+.header {
+    border: 0;
+}
+
+.logo-angular {
+    width: 15%;
+    display: block;
+    margin: 20px auto;
+}
+
+.btn {
+  display: block;
+  margin: 100px auto;
+  width: 20%;
+  border: 1px solid #586aae;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0px 20px 0;
+  color: #fff;
+  background: linear-gradient(45deg, #515ba1, #6078b8)
+}
