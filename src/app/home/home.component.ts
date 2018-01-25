@@ -14,6 +14,11 @@ export class HomeComponent implements OnInit {
       description: 'Início',
     },
     {
+      path: 'Validações',
+      fullRoute: '/validacoes',
+      description: 'Json API'
+    },
+    {
       path: 'Mascaras',
       fullRoute: '/mascaras',
       description: 'Mascaras'

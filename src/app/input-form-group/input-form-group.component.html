@@ -1,0 +1,29 @@
+<form [formGroup]="validacaoForm" novalidate>
+
+    <div class="form-group">
+      <label class="center-block"> Nome
+        <input class="form-control" formControlName="nome" [formControl]="nome" required>
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label class="center-block"> Rua
+        <input class="form-control" formControlName="rua" [formControl]="rua" required>
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label class="center-block"> cidade
+        <input class="form-control" formControlName="cidade" [formControl]="cidade" required>
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label class="center-block"> estado
+        <input class="form-control" formControlName="estado" [formControl]="estado" required>
+      </label>
+    </div>
+  
+    <p>{{validacaoForm.value | json}}</p>
+    <p>{{validacaoForm.status | json}}</p>
+</form>

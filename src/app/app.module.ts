@@ -1,3 +1,4 @@
+import { InputFormGroupModule } from './input-form-group/input-form-group.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
@@ -18,6 +19,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import { IntroComponent } from './intro/intro.component';
 import { HeaderComponent } from './header/header.component';
 import { InstalacaoComponent } from './instalacao/instalacao.component';
+import { ValidacoesFormComponent } from './validacoes-form/validacoes-form.component';
 
 @NgModule({
   declarations: [
@@ -32,13 +34,14 @@ import { InstalacaoComponent } from './instalacao/instalacao.component';
     JsonApiComponent,
     IntroComponent,
     HeaderComponent,
-    InstalacaoComponent
+    InstalacaoComponent,
+    ValidacoesFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatTabsModule
+    InputFormGroupModule
   ],
   providers: [],
   bootstrap: [AppComponent],
