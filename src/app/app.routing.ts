@@ -9,9 +9,11 @@ import { GraficosComponent } from './graficos/graficos.component';
 import { InternacionalizacaoComponent } from './internacionalizacao/internacionalizacao.component';
 import { ManipulacaoDomComponent } from './manipulacao-dom/manipulacao-dom.component';
 import { JsonApiComponent } from './json-api/json-api.component';
+import { IntroComponent } from './intro/intro.component';
+import { InstalacaoComponent } from './instalacao/instalacao.component';
 
 const routes: Routes = [
-    {path: '', component: ConteudoComponent, pathMatch: 'full' },
+    { path: '', redirectTo: 'intro', pathMatch: 'full' },
     {path: 'home', component: HomeComponent},
     {path: 'mascaras', component: MascarasComponent},
     {path: 'modais', component: ModaisComponent},
@@ -19,6 +21,8 @@ const routes: Routes = [
     {path: 'internacionalizacao', component: InternacionalizacaoComponent},
     {path: 'manipulacao-dom', component: ManipulacaoDomComponent},
     {path: 'json-api', component: JsonApiComponent},
+    {path: 'intro', component: IntroComponent},
+    {path: 'instalacao', component: InstalacaoComponent},
  ];
 
 @NgModule({

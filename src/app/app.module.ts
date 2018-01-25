@@ -15,6 +15,9 @@ import { JsonApiComponent } from './json-api/json-api.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {MatTabsModule} from '@angular/material/tabs';
+import { IntroComponent } from './intro/intro.component';
+import { HeaderComponent } from './header/header.component';
+import { InstalacaoComponent } from './instalacao/instalacao.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import {MatTabsModule} from '@angular/material/tabs';
     GraficosComponent,
     InternacionalizacaoComponent,
     ManipulacaoDomComponent,
-    JsonApiComponent
+    JsonApiComponent,
+    IntroComponent,
+    HeaderComponent,
+    InstalacaoComponent
   ],
   imports: [
     BrowserModule,
