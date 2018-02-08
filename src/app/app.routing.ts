@@ -12,6 +12,7 @@ import { JsonApiComponent } from './json-api/json-api.component';
 import { IntroComponent } from './intro/intro.component';
 import { InstalacaoComponent } from './instalacao/instalacao.component';
 import { ValidacoesFormComponent } from './validacoes-form/validacoes-form.component';
+import { FormBuilderComponent } from './form-builder/form-builder.component';
 
 const routes: Routes = [
     { path: '', redirectTo: 'intro', pathMatch: 'full' },
@@ -25,6 +26,7 @@ const routes: Routes = [
     {path: 'intro', component: IntroComponent},
     {path: 'instalacao', component: InstalacaoComponent},
     {path: 'validacoes', component: ValidacoesFormComponent},
+    {path: 'form-builder', component: FormBuilderComponent}
  ];
 
 @NgModule({

@@ -47,6 +47,11 @@ export class HomeComponent implements OnInit {
       path: 'Json API',
       fullRoute: '/json-api',
       description: 'Json API'
+    },
+    {
+      path: 'Form Builder',
+      fullRoute: '/form-builder',
+      description: 'Form Builder'
     }
   ]
 

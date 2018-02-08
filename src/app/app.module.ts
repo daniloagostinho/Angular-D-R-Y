@@ -20,7 +20,9 @@ import { IntroComponent } from './intro/intro.component';
 import { HeaderComponent } from './header/header.component';
 import { InstalacaoComponent } from './instalacao/instalacao.component';
 import { ValidacoesFormComponent } from './validacoes-form/validacoes-form.component';
+import { FormBuilderComponent } from './form-builder/form-builder.component';
 
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,13 +37,16 @@ import { ValidacoesFormComponent } from './validacoes-form/validacoes-form.compo
     IntroComponent,
     HeaderComponent,
     InstalacaoComponent,
-    ValidacoesFormComponent
+    ValidacoesFormComponent,
+    FormBuilderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    InputFormGroupModule
+    InputFormGroupModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

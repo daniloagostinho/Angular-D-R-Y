@@ -1,0 +1,40 @@
+<app-home></app-home>
+<div class="content">
+
+  <h1>Dicas importantes</h1>
+  <h3>Form Control</h3>
+
+  <p>
+    <b>1º</b> Para utilizar o formGroup sempre import o
+    <b>ReactiveFormsModule</b> e
+    <b>ReactiveFormsModule</b> em seu módulo.</p>
+
+  <h3>FormGroup</h3>
+  <p>Servirá pra você apenas agrupar vários formControls, aproveite para incluir todos os seus inputs dentro de um form.</p>
+
+  <h3>FormBuilder</h3>
+  <p>Em resumo significa uma forma mais elegante de criar seus formsControls, até agora não fizemos nada de diferente apenas refactor e refector.</p>
+  
+  <h3>Validators</h3>
+
+  <form [formGroup]="cidadeForm" novalidate>
+    <label class="center-block">
+      <input class="form-control" [formControlName]="nome" required>
+    </label>
+
+    <label class="center-block">
+      <div class="form-control">
+          <input class="form-control" formControlName="cidade">
+      </div>
+    </label>
+    <label class="center-block">
+    <div class="form-control">
+        <input class="form-control" formControlName="estado">
+    </div>
+  </label>
+  </form>
+
+  <p>Form value: {{ cidadeForm.value | json }}</p>
+  <p>Form status: {{ cidadeForm.status | json }}</p>
+
+</div>
