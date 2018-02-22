@@ -57,6 +57,11 @@ export class HomeComponent implements OnInit {
       path: 'Moment Js',
       fullRoute: '/moment-js',
       description: 'Biblioteca para parse de datas'
+    },
+    {
+      path: 'todo-list',
+      fullRoute: '/todo-list',
+      description: 'Lista de a fazeres'
     }
   ]
 

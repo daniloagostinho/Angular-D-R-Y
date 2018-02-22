@@ -23,6 +23,7 @@ import { FormBuilderComponent } from './form-builder/form-builder.component';
 
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { MomentComponent } from './moment/moment.component';
+import { TodoListComponent } from './todo-list/todo-list.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +40,8 @@ import { MomentComponent } from './moment/moment.component';
     InstalacaoComponent,
     ValidacoesFormComponent,
     FormBuilderComponent,
-    MomentComponent
+    MomentComponent,
+    TodoListComponent
   ],
   imports: [
     BrowserModule,
