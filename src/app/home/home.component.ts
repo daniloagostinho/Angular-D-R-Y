@@ -52,6 +52,11 @@ export class HomeComponent implements OnInit {
       path: 'Form Builder',
       fullRoute: '/form-builder',
       description: 'Form Builder'
+    },
+    {
+      path: 'Moment Js',
+      fullRoute: '/moment-js',
+      description: 'Biblioteca para parse de datas'
     }
   ]
 

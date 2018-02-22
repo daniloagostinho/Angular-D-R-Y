@@ -22,6 +22,7 @@ import { ValidacoesFormComponent } from './validacoes-form/validacoes-form.compo
 import { FormBuilderComponent } from './form-builder/form-builder.component';
 
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { MomentComponent } from './moment/moment.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +38,8 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     HeaderComponent,
     InstalacaoComponent,
     ValidacoesFormComponent,
-    FormBuilderComponent
+    FormBuilderComponent,
+    MomentComponent
   ],
   imports: [
     BrowserModule,
